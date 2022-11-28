@@ -25,6 +25,7 @@
 
 ## 構成
 
+```shell
 .
 ├── README.md
 ├── api APIの集約
@@ -38,3 +39,4 @@
 │   └── router.go
 └── types typeの集約
     └── type.go
+```
