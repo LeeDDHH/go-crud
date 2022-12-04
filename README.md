@@ -29,7 +29,11 @@
 .
 ├── README.md
 ├── api APIの集約
-│   └── movie.go
+│   └── movie movie関連のメソッド
+│       ├── delete.go
+│       ├── get.go
+│       ├── post.go
+│       └── put.go
 ├── data サーバー内で扱うデータの集約
 │   └── movies.go
 ├── go.mod

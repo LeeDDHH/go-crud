@@ -1,17 +1,17 @@
 package router
 
 import (
-	"github.com/LeeDDHH/go-crud/api"
+	"github.com/LeeDDHH/go-crud/api/movie"
 	"github.com/gin-gonic/gin"
 )
 
 func Init(r *gin.Engine) {
 	h := r.Group("/")
 	{
-		h.GET("/movies", api.GetMovies)
-		h.GET("/movies/:id", api.GetMovie)
-		h.POST("/movies", api.CreateMovie)
-		h.PUT("/movies/:id", api.UpdateMovie)
-		h.DELETE("/movies/:id", api.DeleteMovie)
+		h.GET("/movies", movie.GetMovies)
+		h.GET("/movies/:id", movie.GetMovie)
+		h.POST("/movies", movie.CreateMovie)
+		h.PUT("/movies/:id", movie.UpdateMovie)
+		h.DELETE("/movies/:id", movie.DeleteMovie)
 	}
 }
